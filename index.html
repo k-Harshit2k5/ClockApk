@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clock_application</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <button id="home" class="vis" value="yes">HOME</button>
+            <button id="clo" class="vis" value="no">CLOCK</button>
+            <button id="ala" class="vis" value="no">ALARM</button>
+            <button id="sto" class="vis" value="no">STOPWATCH</button>
+            <button id="tim" class="vis" value="no">TIMER</button>
+        </div>
+    </header>
+    <div class="domain">
+        <div class="clock">
+            <span id="chrs">00</span>
+            :<span id="cmin">00</span>:
+            <span id="csec">00</span>
+        </div>
+        <div class="alarm">
+            <input autocomplete="off" readonly maxlength="2" class="inp" id="ahrs" inputmode="numeric" placeholder="--">
+            <span>:</span>
+            <input autocomplete="off" readonly maxlength="2" class="inp" id="amin" inputmode="numeric" placeholder="--">
+        </div>
+        <div class="stopwatch">
+            <span id="shrs">00</span>
+            :<span id="smin">00</span>:
+            <span id="ssec">00</span>
+        </div>
+        <div class="timer">
+            <input autocomplete="off" readonly maxlength="2" class="inp" id="thrs" inputmode="numeric" placeholder="00">
+            :<input autocomplete="off" readonly maxlength="2" class="inp" id="tmin" inputmode="numeric" placeholder="00">:
+            <input autocomplete="off" readonly maxlength="2" class="inp" id="tsec" inputmode="numeric" placeholder="00">
+        </div>
+    </div>
+   <button id="setala" class="setbut">SET ALARM</button>;
+   <button id="setsw" name="start" class="setbut">START</button>;
+   <button id="stpsw"  class="setbut">STOP</button>;
+   <button id="swreset"  class="setbut">RESET</button>;
+   <button id="timbut" name="start" class="setbut">START</button>;
+   <button id="timpos"  class="setbut">PAUSE</button>;
+   <button id="treset"  class="setbut">RESET</button>;
+
+    <script src="script.js" ></script>
+</body>
+</html>
